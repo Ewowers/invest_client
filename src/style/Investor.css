@@ -1,0 +1,48 @@
+.banner {
+  position: relative;
+  height: 400px;
+  padding: 50px;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #5e4c5a;
+  opacity: 0.8;
+  z-index: -1;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../image/home/slider.png");
+  background-size: cover;
+  z-index: -1;
+}
+.tit {
+  text-align: center;
+  margin: 0 !important;
+  color: #ffffff !important;
+  border: 1px solid #fff;
+  background-color: #5e4c5a;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+  align-items: center;
+  cursor: pointer;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.tit:hover {
+  color: #5e4c5a !important;
+  border: 1px solid #5e4c5a;
+  background-color: #fff;
+  transition: 0.5s;
+}
